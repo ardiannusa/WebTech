@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+	<title>JS Branching In-Class Activity</title>
+	<script>
+        function ChgColor()
+        {
+            if (document.getElementById("pswd").value == "redsox") document.getElementById("b").style.backgroundColor ="green";
+            else if (document.getElementById("pswd").value == "yankees") document.getElementById("b").style.backgroundColor ="green";
+            else (document.getElementById("b")).style.backgroundColor="red";
+
+        }
+
+        function ChgFont()
+        {
+
+            if (document.getElementById("L").checked) document.getElementById("c").style.fontSize = "30pt";
+            if (document.getElementById("S").checked) document.getElementById("c").style.fontsize = "18pt";
+
+        
+        }
+	</script>
+  </head>
+  <body>
+	<h1 style="font-size:24pt">JS Branching In-Class Activity</h1>
+	<p>Instructions: When the user enters redsox or yankees as the password and clicks the Login button, the page background color should turn to green.  Any other password should turn the background color to red when the login button is pressed.  When the user selects a large font size, the font size of the h1 tag should become 30pt.  If the user selects a small font size, the font size of the h1 tag should become 18pt.  If the user clicks the Toggle button when the background is green, the background color will change to red and the entry in the password box will change to dolphins. If the user clicks the Toggle button when the background is red, the background color will change to green and the entry in the password box will change to redsox.  If the background color was neither red nor green when the Toggle button is clicked, nothing should happen.</p>
+	<hr>
+	<p>Enter password: <input type="text" name="pw"><br><button id="pswd" onclick="ChgColor()">Login</button></p>
+	<p>H1 Font Size: Large: <input type="radio" name="fz" value="L" onclick="ChgFont()"> Small <input type="radio" name="fz" value="S" onclick="ChgFont()"></p>
+	<p><button>Toggle Page Background Color</button></p>
+
+</body></html>
