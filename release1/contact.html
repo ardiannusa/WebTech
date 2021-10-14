@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	*{margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;}
+
+	.contact{
+	position: relative;
+	min-height: 100vh;
+	padding:30px 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url("https://s1.dmcdn.net/v/FeUbS1Ul66-Lw66OV/x1080");
+	background-size: cover;}
+
+	.content{
+	max-width:700px;
+	text-align:center;}
+
+	.content h1{
+	font-size: 36px;
+	font-weight:500;
+	color:#fff;}
+
+	.content p{
+	font-weight:300;
+	color:#fff;
+	font-size:20px;}
+
+	.container{
+	width:90%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:20px;
+	}
+
+	.container .contactInfo{
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	}
+
+	.container .contactInfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;}
+
+	.container .contactInfo .box .icon{
+	min-width:60px;
+	height:60px;
+	background:#fff;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	border-radius:50%;
+	font-size:22px;}
+	
+	.container .contactInfo .box .text{
+	display:flex;
+	margin-left:20px;
+	font-size:20px;
+	color:#fff;
+	flex-direction:column;
+	font-weight:300;}
+
+	.contactForm{
+		width: 40%;
+		padding: 40px;
+		background: #fff;
+	}
+
+	.contactForm h2{
+		font-size:40px;
+		color:#333;
+		font-weight:500;
+	}
+
+	.contactForm .inputBox{
+		position: relative;
+		width:100%;
+		margin-top:10px; 
+	}
+
+	.contactForm .inputBox input, 
+	.contactForm .inputBox textarea{
+		width:100%;
+		padding:5px 0;
+		font-size: 16px;
+		margin: 10px 0;
+		border: none;
+		border-bottom: 2px solid #333;
+		outline:none;
+		resize:none;
+	}
+
+	.inputBox2{
+		width: 200px;
+		background: white;
+		color:black;
+		border:none;
+		cursor:pointer;
+		padding:10px;
+		font-size:16px;
+	}
+
+	.contactForm .inputBox input[type="submit"]{
+		width: 100px;
+		background: grey;
+		color:#fff;
+		border:none;
+		cursor:pointer;
+		padding:10px;
+		font-size:18px;
+
+	}
+
+	.contactForm .inputBox input[type="reset"]{
+		width: 100px;
+		background: grey;
+		color:#fff;
+		border:none;
+		cursor:pointer;
+		padding:10px;
+		font-size:18px;
+
+	}
+
+	@media (max-width: 991px)
+	{
+		.contact
+		{
+			padding: 50px;
+		}
+		.container
+		{
+			flex-direction: column;
+		}
+		.container .contactInfo
+		{
+			margin-bottom: 40px;
+		}
+		.container .contactInfo
+		{
+			width:100%
+		}
+	}
+
+</style>
+	
+</head>
+<body>
+
+<div class="navbar">
+
+    <div class="logo">
+        <img src="BOILERROOMFAN.jpeg" alt="" width="90" height="90">
+    </div>
+
+    <nav>
+        <ul>
+			<li><a href="index.html">Home</a></li>   
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="awards.html">Awards</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="djsets.html">DJ Sets</a></li>
+			<li><a href="merchandise.html">Merchandise</a></li>
+        </ul>
+    </nav>
+</div>
+<section class="contact">
+		<div class="content">
+			<h1>Contact Us</h1>	
+			<br>
+			<p>Please fill in the information below if you have any inquiries or feedback regarding the website.</p>
+				<p>We will try to respond your questions within 24 hours.</p>
+		</div>
+		<div class="container">
+			<div class="contactInfo">
+				<div class="box">
+						<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+						</div>
+						<div class="text">
+							<h3>Address</h3>
+							<p>275 2nd Ave, <br>Needham, MA <br>02494</p>
+					</div>
+				</div>
+				<div class="box">
+						<div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i>
+						</div>
+						<div class="text">
+							<h3>Phone</h3>
+							<p>(857)-348-6270</p>
+					</div>
+				</div>
+				<div class="box">
+						<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<div class="text">
+							<h3>Email</h3>
+							<p>asukamdani1@babson.edu</p>
+					</div>
+				</div>
+			</div>
+			<div class="contactForm">
+				<form method="post" action="mailer.php">
+					<div class="inputBox"><p>
+						<b>Name:</b><input type="text" name="firstname" maxlength="100" value="Enter name here"/>
+					</p></div>
+					<div class="inputBox"><p><b>Gender:</b><br><br>
+						Male<input type="checkbox" class="male" name="gender" value="male"/> 
+						Female<input type="checkbox" class="female" name="gender" value="female" checked="checked"/>
+						Others<input type="checkbox" class="others" name="gender" value="others"/></p></div>
+					<br>
+					<div class="inputBox"><p><b>How did you hear about this website?</b>
+					<select name="D1" class="inputBox2">
+						<option value="Instagram">Instagram</option>
+						<option value="Facebook">Facebook</option>
+						<option value="Whatsapp">Whatsapp</option>
+						<option value="Friends">Friends</option>
+						<option value="Others">Others</option>
+					</select></p></div>
+					<br>
+					<div class="inputBox"><p><b>Send Message</b></p>
+					<p><textarea name="comments" rows="5" cols="29">Type your Message...</textarea></p></div>
+					<div class="inputBox"><p>
+					<input type="submit" value="Submit" name="Submit" style="margin-right: 50px"/>
+					<input type="reset" value="Reset" name="Reset"/>
+					</p></div>
+				</form>
+			</div>
+		</div>
+</section>	
+</body>
+</html>
