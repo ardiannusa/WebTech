@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Session 15</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<style>
+		button{
+			position:absolute;top:0px;left:0px;
+		}
+	</style>
+<script>
+	function clickMe()
+	{
+		var x=Math.floor(Math.random()*501)+"px";
+		var y=Math.floor(Math.random()*501)+"px";
+		var button1 = document.getElementById("bt");
+
+		button1.style.left=x;
+		button1.style.top=y;
+
+		var words=new Array("Click Me", "Move Me", "Click Here", "Button", "Next");
+		document.getElementById("bt").innerHTML=words[Math.floor(Math.random()*words.length)];
+	}
+</script>
+</head>
+<body>
+
+	<button onclick="clickMe()" id="bt" class="word">Click Me</button>
+
+</body>
+</html>
