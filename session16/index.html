@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Ardian</title>
+    <link rel="stylesheet" type="text/css" href="stylesession4.css"/>
+<script>
+    var bgColors = new Array("green","yellow","blue","pink","red","orange");
+    var counter=0
+    function selectBGcolor()
+{
+        document.getElementById("bod").style.backgroundColor=bgColors[counter]
+        counter = counter+1
+        if (counter == bgColors.length)
+    {
+        counter=0
+    }
+    setTimeout("selectBGcolor()",2000)
+}
+</script>
+
+ <style>
+    body {background-color:black; background-image: url('https://img.freepik.com/free-vector/elegant-dark-background-with-golden-details_52683-32876.jpg?size=626&ext=jpg'); background-position:center; background-repeat:repeat; background-attachment: fixed; border: white; width:60%; height:7px; padding-top:20px; padding-right:20%; padding-bottom:20px; padding-left:20%; float: left}
+    h1 {text-align:center;font-family: Verdana; color: whitesmoke; text-shadow: 5px 5px 3px grey;}
+    h6 {text-align:center; cursor:crosshair; float:right; -ms-transform: rotate(8deg); -webkit-transform: rotate(8deg); transform: rotate(8deg); box-shadow: 20px 20px 50px 10px grey}
+    p {text-align:center; font-family:Geneva; font-size:13pt; text-indent:20px; color: whitesmoke;}
+    hr {width:60%; color: white; height: 7px; background-color:white; border:white;}
+</style>
+</head>
+<body onload="selectBGcolor()">
+    <h1 style="border: gold; border-style:solid" id="bod">About Ardian</h1>
+    <h6><img src="ARDIAN_PHOTO.jpeg" alt="picture of me"/></h6>
+    <hr>
+        <p style="border:gold; border-style:solid">Hi! My Name is Ardian Sukamdani, and I am originally from Jakarta, a buzzling city that is also the the capital city of Indonesia</p><p style="border:gold; border-style:solid">Now, the best way to reach me out is by contacting me via <i>Whatsapp</i> <b>(+1 857 348 6270)</b> or emailing me via my Babson Email <b>(asukamdani1@babson.edu)</b></p>
+    <hr>
+        <p style="border:gold; border-style:solid">One interesting thing about me is that I am a supporter of an unpopular team in the EPL - <b>West Ham United</b>. For more than 10 years, people have questioned my decision on why I supported the club even though it has been consistently below top 10 in the <i>English Premiere League</i> (EPL) ranking, in which I always replied that "this team will one day become one of the top team in england". My wish became a reality as the team has succesfully rose on to the top of the league during this year's EPL season, and I cannot express how proud I am to be a part of the Hammers family at this moment.</p>
+    <hr>
+        <p style="border:gold; border-style:solid">To know what I am currently interested right now, please click to the link <a href="Interests.html" target="_blank">HERE</a></p>
+</body>
+</html>
