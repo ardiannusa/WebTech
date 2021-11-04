@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Cookies</title>
+	<style>	
+	</style>
+	<script>
+        function setCookie(LastVisit, cValue)
+        {
+            var today = new Date()
+
+            var expireDate = new Date (today.getFullYear()+1, today.getMonth(), today.getDate())
+
+            document.cookie = LastVisit + "=" + cValue + "; expires=" + expireDate.tpGMTString()
+        }
+
+        function readCookie(LastVisit)
+        {
+            c=documentcookie
+            var s=c.indexOg(LastVisit)
+            if(s==-1) return null;
+            var cs=c.substring(s)
+            var e=cs.inedOf(";")
+            if(e != -1){
+                cs=cs.substring(0,e)
+            }
+            cookieParts=cs.split("=")
+            return cookieparts[1]
+        }
+
+        function setPrefs()
+        {
+            mybody=document.getElementById("bodytag");
+            mybody.style.backgroundColor = readCookie("bgColor");
+            mybody.style.color = readCookie("fgColor");
+        }
+	</script>
+</head>
+<body id="bodytag" onload="setPrefs()" style="background-color: white; color: yellow;">
+    <h1>Last Visit</h1>
+
+<body>
+</body>
+</html>
