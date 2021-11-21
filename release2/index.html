@@ -261,9 +261,9 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += "active";
   
-  setTimeout("showSlides()",500);
+  setTimeout("showSlides(n)",500);
 
 }
 
@@ -276,7 +276,7 @@ var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(
 
 </script>
 </head>
-<body>
+<body onload="showSlides(n)">
     <div class="container">
         <div class="navbar">
             <div class="logo">
