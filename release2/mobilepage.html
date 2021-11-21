@@ -1,0 +1,330 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="128x128" href="BOILERROOMFAN.png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boilerroomfan - the number 1 site for new Boiler Room fans all around the world" />
+    <meta name="keywords" content="Boiler Room, Boiler Room Fans, DJ, Techno, House, Garage, Underground Music" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.home{
+    padding: 50px 50px;
+    position: relative;
+    width: 93.05%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: black;
+    color:white;
+}
+
+.home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+}
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .content h1{
+    font-size: 3.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.home .content p{
+    margin-bottom: 65px;
+    font-size: 15pt;
+    line-height:1.5;
+}
+
+
+button{
+    padding: 15px 35px;
+    border:0;
+    background:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+.home .media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3;
+}
+
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+    transform: scale(1.3);
+}
+
+.home img{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    margin-right: 90px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 1345px;
+}
+
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.6s ease;
+}
+
+.active, .dot:hover{
+    background: rgba(0,0,0,0.5)
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity:1}
+}
+
+.slider-navigation .nav-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+span{
+    font-size: 3.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    color:grey;
+}
+
+.audio{
+    color:white;
+}
+
+@media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .home {
+        padding: 100px 20px;
+    }
+
+    .home .media-icons{
+        right: 15px;
+    }
+}
+
+
+
+/* Position the "next button" to the right */
+
+
+</style>
+<script>
+
+var words = new Array("Underground","House","Techno","Garage");
+
+	function newWord()
+	{
+		var wordNumber=Math.floor(Math.random()*words.length);
+		document.getElementById("rand").innerHTML=words[wordNumber];
+        setTimeout("newWord()",500);
+	}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  
+  setTimeout("showSlides()",500);
+
+}
+
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="BOILERROOMFAN.jpeg" alt="" width="90" height="90">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>   
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="djsets.html">DJ Sets</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="home">
+            <div class="mySlides fade">
+                <img src="https://boilerroom.tv/cdn-cgi/image/width=3150,height=1653,fit=cover,format=auto/https://videos.boilerroom.tv/assets/5717_Y1high_resolution.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://s1.dmcdn.net/v/HQH5Q1Ul66eSoFAqk/x1080">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://mixing.dj/wp-content/uploads/2014/08/nina-kraviz.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://videos.boilerroom.tv/assets/GJ_TH.jpeg">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://s1.dmcdn.net/v/GRLZ01Ul66uoIL8aD/x1080">
+            </div>
+            <div class="content">
+                <h1><span style="color:white">The</span> <span onclick="newWord()" id="rand">Underground</span> <span style="color:white">Never Dies</span>.<br><span style="color:white">Welcome to BR Fanpage</span></h1>
+                <p>Since its foundation in 2010, BR has been in the frontline in preserving the underground electronic music culture amidst the influx of pop music on mainstream media.
+                    Learn more about the journey of this amazing platform by browsing through this fanpage. 
+                </p>
+                <form style="display: inline" action="about.html" method="get" target="_blank"><button>Read More</button></form>
+            </div>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/boilerroom.tv" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/boilerroomtv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCGBpxWJr9FNOcFYA5GkKrMg" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/boilerroomtv/?hl=en" target="_blank" class="fa fa-instagram"></a>            
+            
+            <a class="prev" onclick="plusSlides(1)">&#10095;</a>
+            <a class="next" onclick="plusSlides(-1)">&#10094;</a>
+            
+            </div>
+
+            <div class="slider-navigation">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+    <div class="audio" style="display:none">
+        <audio controls autoplay>
+            <source src="Peggy_Gou_-_It_Makes_You_Forget_Itgehane_(djlist.net).mp3.crdownload" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html>
