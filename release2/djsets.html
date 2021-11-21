@@ -42,7 +42,7 @@
 <script>
 $(document).ready(function(){
   $("#p1").click(function(){
-    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+    $("#p1").slideUp(2000).slideDown(2000).animate("opacity", "0.8");
   });
 });
 </script>
@@ -69,7 +69,7 @@ $(document).ready(function(){
         </nav>
     </div>
     <br>
-    <div id="p1">
+    <div id="p1" style="opacity:1">
         <div class="right-side">
             <div class="right-side-content">
                 <h1>GENRES</h1>
