@@ -37,12 +37,16 @@
     color:white;
     }
 
+    .add{
+        background-image:url("https://i.ytimg.com/vi/Y1TDir9JdS4/maxresdefault.jpg");
+    }
+
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
   $("#p1").click(function(){
-    $("#p1").slideUp(2000).slideDown(2000).animate("opacity", "0.8");
+    $("#p1").addClass("add");
   });
 });
 </script>
@@ -69,7 +73,7 @@ $(document).ready(function(){
         </nav>
     </div>
     <br>
-    <div id="p1" style="opacity:1">
+    <div class="add" id="p1" style="opacity:1">
         <div class="right-side">
             <div class="right-side-content">
                 <h1>GENRES</h1>
