@@ -10,7 +10,6 @@
     <meta name="description" content="Boilerroomfan - the number 1 site for new Boiler Room fans all around the world" />
     <meta name="keywords" content="Boiler Room, Boiler Room Fans, DJ, Techno, House, Garage, Underground Music" />
     <title>BRFan</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
@@ -64,6 +63,16 @@ ol{font-family:tradegothic;
     display: none;
 }
 
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
 
 .home{
     padding: 50px 50px;
@@ -291,9 +300,7 @@ function togglemenu(){
 <body onload="carousel()">
     <div class="container">
         <div class="navbar">
-            <div class="logo">
-                <img src="BOILERROOMFAN.jpeg" alt="boiler room">
-            </div>
+            <img src="BOILERROOMFAN.jpeg" alt="boiler room" class="logo">
            <nav>
                 <ul id="menuList">
                     <li><a href="index.html">Home</a></li>   
