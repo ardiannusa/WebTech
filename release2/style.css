@@ -32,6 +32,7 @@ nav ul li {
 nav ul li a {
     color: rgb(288, 288, 288);
     font-family:tradegothicbold; 
+    text-decoration: none;
 }
 
 .logo { 
