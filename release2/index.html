@@ -242,7 +242,6 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
-  setTimeout("plusSlides()",500);
 }
 
 function currentSlide(n) {
@@ -275,7 +274,7 @@ var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(
 
 </script>
 </head>
-<body onload="plusSlides()">
+<body>
     <div class="container">
         <div class="navbar">
             <div class="logo">
