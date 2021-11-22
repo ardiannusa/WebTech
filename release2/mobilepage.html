@@ -73,22 +73,15 @@ button{
 }
 
 .home .media-icons{
-    z-index: 888;
-    position: absolute;
-    right: 30px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s ease;
+   height: 13px;
+   margin: 20px;
+   cursor: pointer;
 }
 
 .home .media-icons a{
     color: #fff;
     font-size: 1.6em;
     transition: 0.3s;
-}
-
-.home .media-icons a:not(:last-child){
-    margin-bottom: 20px;
 }
 
 .home .media-icons a:hover{
@@ -121,27 +114,13 @@ span{
     color:grey;
 }
 
-
-span{
-    font-size: 3.5em;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 75px;
-    margin-bottom: 40px;
-    color:grey;
-}
-
-.audio{
-    color:white;
-}
-
 @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)  {
 
 	nav ul{
         width: 100%;
         background: linear-gradient(rgba(0,0,0,0.5));
         position: absolute;
+        top: 50px;
         right: 0;
         z-index: 2;
 
@@ -284,19 +263,18 @@ function togglemenu(){
                 </p>
                 <form style="display: inline" action="about.html" method="get" target="_blank"><button>Read More</button></form>
             </div>
-
-            <div class="media-icons">
-                <a href="https://www.facebook.com/boilerroom.tv" target="_blank" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/boilerroomtv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://www.youtube.com/channel/UCGBpxWJr9FNOcFYA5GkKrMg" class="fa fa-youtube"></a>
-                <a href="https://www.instagram.com/boilerroomtv/?hl=en" target="_blank" class="fa fa-instagram"></a>            
-            </div>
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/boilerroom.tv" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/boilerroomtv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/channel/UCGBpxWJr9FNOcFYA5GkKrMg" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/boilerroomtv/?hl=en" target="_blank" class="fa fa-instagram"></a>            
         </div>
     </div>
-    <div class="audio" style="display:none">
+    <!---<div class="audio" style="display:none">
         <audio controls autoplay>
             <source src="Peggy_Gou_-_It_Makes_You_Forget_Itgehane_(djlist.net).mp3.crdownload" type="audio/mpeg">
         </audio>
-    </div>
+    </div>-->
 </body>
 </html>
