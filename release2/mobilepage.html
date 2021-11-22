@@ -161,6 +161,11 @@ span{
         display: block;
     }
 
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
 }
 
 /* Position the "next button" to the right */
@@ -193,6 +198,23 @@ var myIndex = 0;
     setTimeout(carousel, 2000);
     }
 
+var menuList=document.getElementById("menuList");
+
+menuList.style.maxHeight = "0px";
+
+function togglemenu(){
+
+    if(menuList.style.maxHeight == "0px")
+    {
+        menuList.style.maxHeight = "130px";
+    }
+
+    else 
+    {
+        menuList.style.maxHeight = "0px";
+    }
+}
+
 
 </script>
 </head>
@@ -203,7 +225,7 @@ var myIndex = 0;
                 <img src="BOILERROOMFAN.jpeg" alt="" width="90" height="90">
             </div>
             <nav>
-                <ul>
+                <ul id="menulist">
                     <li><a href="index.html">Home</a></li>   
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
