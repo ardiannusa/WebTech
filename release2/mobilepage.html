@@ -15,7 +15,7 @@
 <style>
 
 .home{
-    padding: 50px 50px;
+    padding: 1.5625em 1.5625em;
     position: relative;
     width: 93.05%;
     min-height: 100vh;
@@ -76,7 +76,7 @@ button{
 .home .media-icons{
     z-index: 888;
     position: absolute;
-    right: 30px;
+    right: 1.5625em;
     display: flex;
     flex-direction: column;
     transition: 0.5s ease;
@@ -85,11 +85,11 @@ button{
 .home .media-icons a{
     color: #fff;
     font-size: 1.6em;
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 .home .media-icons a:not(:last-child){
-    margin-bottom: 20px;
+    margin-bottom: 1.250em;
 }
 
 .home .media-icons a:hover{
@@ -195,12 +195,12 @@ span{
 }
 
 @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)  {
-	.container {flex-direction: column;}
-	.home {width:100%; float:none}
-    .home h1 {font-size: 12pt}
-    .home p {font-size: 10pt}
-	.media-icons {width:70%; float:none}
-    .slider-navigation {width:70%; float:none}
+	.container {flex-direction: column; position: absolute;}
+	.home {width:100%; float:none; position: absolute;}
+    .home h1 {font-size: 12pt; position: absolute;}
+    .home p {font-size: 10pt; position: absolute;}
+	.media-icons {width:70%; float:none; position: absolute; }
+    .slider-navigation {width:70%; float:none; position: absolute;}
 }
 
 /* Position the "next button" to the right */
@@ -218,39 +218,26 @@ var words = new Array("Underground","House","Techno","Garage");
         setTimeout("newWord()",500);
 	}
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var myIndex = 0;
+    carousel();
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000);
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  
-  setTimeout("showSlides()",2000);
-
-}
 
 </script>
 </head>
-<body>
+<body onload="carousel()">
     <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -271,20 +258,20 @@ function showSlides(n) {
             </nav>
         </div>
         <div class="home">
-            <div class="mySlides fade">
-                <img src="https://boilerroom.tv/cdn-cgi/image/width=3150,height=1653,fit=cover,format=auto/https://videos.boilerroom.tv/assets/5717_Y1high_resolution.jpg">
+            <div class="mySlides">
+                <img src="https://boilerroom.tv/cdn-cgi/image/width=3150,height=1653,fit=cover,format=auto/https://videos.boilerroom.tv/assets/5717_Y1high_resolution.jpg" alt="Peggy Gou" style="width:100%">
             </div>
-            <div class="mySlides fade">
-                <img src="https://s1.dmcdn.net/v/HQH5Q1Ul66eSoFAqk/x1080">
+            <div class="mySlides">
+                <img src="https://s1.dmcdn.net/v/HQH5Q1Ul66eSoFAqk/x1080" alt="Black Madonna" style="width:100%">
             </div>
-            <div class="mySlides fade">
-                <img src="https://mixing.dj/wp-content/uploads/2014/08/nina-kraviz.jpg">
+            <div class="mySlides">
+                <img src="https://mixing.dj/wp-content/uploads/2014/08/nina-kraviz.jpg" alt="Nina Kraviz" style="width:100%">
             </div>
-            <div class="mySlides fade">
-                <img src="https://videos.boilerroom.tv/assets/GJ_TH.jpeg">
+            <div class="mySlides">
+                <img src="https://videos.boilerroom.tv/assets/GJ_TH.jpeg" alt="Gerd Janson" style="width:100%">
             </div>
-            <div class="mySlides fade">
-                <img src="https://s1.dmcdn.net/v/GRLZ01Ul66uoIL8aD/x1080">
+            <div class="mySlides">
+                <img src="https://s1.dmcdn.net/v/GRLZ01Ul66uoIL8aD/x1080" alt="Mall Grab" style="width:100%">
             </div>
             <div class="content">
                 <h1><span style="color:white">The</span> <span onclick="newWord()" id="rand">Underground</span> <span style="color:white">Never Dies</span>.<br><span style="color:white">Welcome to BR Fanpage</span></h1>
@@ -298,18 +285,7 @@ function showSlides(n) {
                 <a href="https://twitter.com/boilerroomtv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter"></a>
                 <a href="https://www.youtube.com/channel/UCGBpxWJr9FNOcFYA5GkKrMg" class="fa fa-youtube"></a>
                 <a href="https://www.instagram.com/boilerroomtv/?hl=en" target="_blank" class="fa fa-instagram"></a>            
-            
-                <a class="prev" onclick="plusSlides(1)">&#10095;</a>
-                <a class="next" onclick="plusSlides(-1)">&#10094;</a>
-            
-            </div>
-
-            <div class="slider-navigation">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
+                        
             </div>
         </div>
     </div>
