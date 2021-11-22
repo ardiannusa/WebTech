@@ -179,10 +179,22 @@ function myFunction1()
 			document.getElementById("name").focus();
 		}
 
-		else if(document.getElementById("checkbox").checked == false)
+		else if(document.getElementById("checkbox1").checked == false)
 		{
 			alert("You need to select your gender");
 			document.getElementById("checkbox").focus();
+		}
+
+		else if(document.getElementById("checkbox2").checked == false)
+		{
+			alert("You need to select your gender");
+			document.getElementById("checkbox2").focus();
+		}
+
+		else if(document.getElementById("checkbox3").checked == false)
+		{
+			alert("You need to select your gender");
+			document.getElementById("checkbox3").focus();
 		}
 
 		else if(document.getElementById("selectbox").value=="Select")
@@ -191,7 +203,7 @@ function myFunction1()
 			document.getElementById("selectbox").focus();
 		}
 
-		else if(document.getElementById("messagebox").value="")
+		else if(document.getElementById("messagebox").value=="")
 		{
 			alert("Please fill in the message that you want to send to us");
 			document.getElementById("messagebox").focus();
@@ -268,10 +280,10 @@ function myFunction1()
 					<div class="inputBox"><p>
 						<b>Name:</b><input type="text" name="firstname" maxlength="100" id="name"/>
 					</p></div>
-					<div class="inputBox" id="checkbox"><p><b>Gender:</b><br><br>
-						Male<input type="checkbox" class="male" name="gender" value="male"/> 
-						Female<input type="checkbox" class="female" name="gender" value="female"/>
-						Others<input type="checkbox" class="others" name="gender" value="others"/></p></div>
+					<div class="inputBox"><p><b>Gender:</b><br><br>
+						Male<input type="checkbox" class="male" name="gender" value="male" id="checkbox1"/> 
+						Female<input type="checkbox" class="female" name="gender" value="female" id="checkbox2"/>
+						Others<input type="checkbox" class="others" name="gender" value="others" id="checkbox3"/></p></div>
 					<br>
 					<div class="inputBox"><p><b>How did you hear about this website?</b>
 					<select name="D1" class="inputBox2" id="selectbox">
