@@ -190,20 +190,13 @@ var myIndex = 0;
     setTimeout(carousel, 2000);
     }
 
-var menuList = document.getElementById("menuList");
-
-menuList.style.maxHeight = "0px";
-
-function togglemenu(){
-
-    if(menuList.style.maxHeight == "0px"){
-        menuList.style.maxHeight = "130px";
-    }
-
-    else
-    {
-        menuList.style.maxHeight = "0px";
-    }
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 
 </script>
@@ -215,7 +208,7 @@ function togglemenu(){
                 <img src="BOILERROOMFAN.jpeg" alt="" width="90" height="90">
             </div>
            <nav>
-                <ul id="menuList">
+                <ul id="myLinks">
                     <li><a href="index.html">Home</a></li>   
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -227,7 +220,7 @@ function togglemenu(){
                     <li><a href="credits.html">Credits</a></li>
                 </ul>
             </nav>
-            <img src="menuicon.png" class="menu-icon" onclick="togglemenu()">
+            <a href="javascript:void(0);" onclick="myFunction()"><img src="menuicon.png" class="menu-icon"></a>
         </div>
         <div class="home">
             <div class="mySlides">
