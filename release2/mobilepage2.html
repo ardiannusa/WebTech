@@ -90,7 +90,6 @@ nav ul li:hover a {
     transition: color 0.5s;
 }
 
-
 .home{
     display: flex;
     justify-content: space-between;
@@ -98,43 +97,22 @@ nav ul li:hover a {
     margin: 100px;
 }
 
-.home:before{
-    z-index: 777;
-    content: '';
-    position: absolute;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0; 
+.content{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
 }
 
-.home .content{
-    z-index: 888;
-    color: #fff;
-    width: 70%;
-    margin-top: 50px;
+.content h1{
+    font-size: 54px;
 }
 
-.home .content h1{
-    font-size: 2em;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-bottom: 40px;
+.content p{
+    font-size: 30px;
+    color: white; 
+    font-weight: 100;
+    margin: 20px 0 10px
 }
-
-.home .content h1 span{
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.home .content p{
-    margin-bottom: 65px;
-    font-size: 15pt;
-    line-height:1.5;
-}
-
 
 button{
     padding: 15px 35px;
@@ -186,21 +164,6 @@ span{
     line-height: 75px;
     margin-bottom: 40px;
     color:grey;
-}
-
-
-span{
-    font-size: 3.5em;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 75px;
-    margin-bottom: 40px;
-    color:grey;
-}
-
-.audio{
-    color:white;
 }
 
 @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)  {
