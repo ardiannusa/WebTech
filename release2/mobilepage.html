@@ -15,7 +15,7 @@
 <style>
 
 .home{
-    padding: 1.5625em 1.5625em;
+    padding: 50px 50px;
     position: relative;
     width: 93.05%;
     min-height: 100vh;
@@ -60,7 +60,7 @@
 
 .home .content p{
     margin-bottom: 65px;
-    font-size: 15px;
+    font-size: 15pt;
     line-height:1.5;
 }
 
@@ -76,7 +76,7 @@ button{
 .home .media-icons{
     z-index: 888;
     position: absolute;
-    right: 1.5625em;
+    right: 30px;
     display: flex;
     flex-direction: column;
     transition: 0.5s ease;
@@ -89,7 +89,7 @@ button{
 }
 
 .home .media-icons a:not(:last-child){
-    margin-bottom: 1.250em;
+    margin-bottom: 20px;
 }
 
 .home .media-icons a:hover{
@@ -106,64 +106,18 @@ button{
     object-fit: cover;
 }
 
-.slider-navigation{
-    z-index: 888;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(80px);
-    margin-bottom: 12px;
+span{
+    font-size: 3.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    color:grey;
 }
 
-
-.prev, .next{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    margin-right: 90px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    margin-right: 1345px;
-}
-
-
-.prev:hover, .next:hover{
-    background-color: rgba(0,0,0,0.8);
-}
-
-.dot{
-    width: 15px;
-    height: 15px;
-    margin: 0 5px;
-    background: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
-    transition: 0.6s ease;
-}
-
-.active, .dot:hover{
-    background: rgba(0,0,0,0.5)
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+.audio{
+    color:white;
 }
 
 @-webkit-keyframes fade{
@@ -194,14 +148,14 @@ span{
     color:white;
 }
 
-@media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)  {
+/*@media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)  {
 	.container {flex-direction: column; position: absolute;}
 	.home {width:100%; float:none; position: absolute;}
     .home h1 {font-size: 12pt; position: absolute;}
     .home p {font-size: 10pt; position: absolute;}
 	.media-icons {width:70%; float:none; position: absolute; }
     .slider-navigation {width:70%; float:none; position: absolute;}
-}
+}*/
 
 /* Position the "next button" to the right */
 
@@ -259,19 +213,19 @@ var myIndex = 0;
         </div>
         <div class="home">
             <div class="mySlides">
-                <img src="https://boilerroom.tv/cdn-cgi/image/width=3150,height=1653,fit=cover,format=auto/https://videos.boilerroom.tv/assets/5717_Y1high_resolution.jpg" alt="Peggy Gou" style="width:100%">
+                <img src="https://boilerroom.tv/cdn-cgi/image/width=3150,height=1653,fit=cover,format=auto/https://videos.boilerroom.tv/assets/5717_Y1high_resolution.jpg" alt="Peggy Gou" style="width:90%">
             </div>
             <div class="mySlides">
-                <img src="https://s1.dmcdn.net/v/HQH5Q1Ul66eSoFAqk/x1080" alt="Black Madonna" style="width:100%">
+                <img src="https://s1.dmcdn.net/v/HQH5Q1Ul66eSoFAqk/x1080" alt="Black Madonna" style="width:90%">
             </div>
             <div class="mySlides">
-                <img src="https://mixing.dj/wp-content/uploads/2014/08/nina-kraviz.jpg" alt="Nina Kraviz" style="width:100%">
+                <img src="https://mixing.dj/wp-content/uploads/2014/08/nina-kraviz.jpg" alt="Nina Kraviz" style="width:90%">
             </div>
             <div class="mySlides">
-                <img src="https://videos.boilerroom.tv/assets/GJ_TH.jpeg" alt="Gerd Janson" style="width:100%">
+                <img src="https://videos.boilerroom.tv/assets/GJ_TH.jpeg" alt="Gerd Janson" style="width:90%">
             </div>
             <div class="mySlides">
-                <img src="https://s1.dmcdn.net/v/GRLZ01Ul66uoIL8aD/x1080" alt="Mall Grab" style="width:100%">
+                <img src="https://s1.dmcdn.net/v/GRLZ01Ul66uoIL8aD/x1080" alt="Mall Grab" style="width:90%">
             </div>
             <div class="content">
                 <h1><span style="color:white">The</span> <span onclick="newWord()" id="rand">Underground</span> <span style="color:white">Never Dies</span>.<br><span style="color:white">Welcome to BR Fanpage</span></h1>
@@ -280,6 +234,7 @@ var myIndex = 0;
                 </p>
                 <form style="display: inline" action="about.html" method="get" target="_blank"><button>Read More</button></form>
             </div>
+
             <div class="media-icons">
                 <a href="https://www.facebook.com/boilerroom.tv" target="_blank" class="fa fa-facebook"></a>
                 <a href="https://twitter.com/boilerroomtv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter"></a>
