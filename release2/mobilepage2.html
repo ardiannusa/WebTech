@@ -36,6 +36,10 @@ td{font-family:tradegothic;
 ol{font-family:tradegothic;
 }
 
+a{font-family:tradegothic;
+}
+
+
 .container{
     width: 100%;
     min-height: 100vh;
@@ -81,16 +85,16 @@ nav ul li a{
     font-size: 14px;
 }
 
+nav ul li:hover a {
+    color: burlywood;
+    transition: color 0.5s;
+}
+
+
 .home{
-    padding: 50px 50px;
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background: black;
-    color:white;
+    justify-content: space-between;
+    align-items:center;
 }
 
 .home:before{
@@ -171,7 +175,6 @@ button{
     height: 100%;
     object-fit: cover;
 }
-
 
 
 span{
