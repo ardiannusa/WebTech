@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boilerroomfan - the number 1 site for new Boiler Room fans all around the world" />
+    <meta name="keywords" content="Boiler Room, Boiler Room Fans, DJ, Garage, Underground Music, Conducta, UKG, Jeremy Sylvestere, Jorja Smith, Skrillex" />
+
+
+    <title>Garage Genre</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+<style>
+    *{margin: 0;}
+    h1{text-align:center;}
+
+    .garage p {
+        text-align:center; 
+        font-size:13pt; 
+        text-indent:20px; 
+        line-height:2; 
+        padding-top:15px; 
+        padding-right:20%; 
+        padding-bottom:15px; 
+        padding-left:20%;
+    }
+    table{
+        padding-right:5%; 
+        padding-left:1%; 
+        padding-top:20px;
+    }
+    td{
+        margin-left:10px;
+        vertical-align: top;
+        padding-right:5%;
+        padding:15px;
+
+
+    }
+    .djset p{
+        line-height:2; 
+        font-size:13pt;
+        text-align:justify;
+
+    }
+
+    button{
+        width: 150px;
+        height:50px;
+		background: black;
+		color:#fff;
+		border:none;
+		cursor:pointer;
+		font-size:18px;
+    }
+</style>
+<script>
+    function myFunction1(){
+        document.getElementById("color").style.backgroundColor="black";
+        document.getElementById("color").style.color="white";
+        document.getElementById("colorbtn").style.backgroundColor="white";
+        document.getElementById("colorbtn").style.color="black";
+    }
+
+    function myFunction2(){
+        document.getElementById("color").style.backgroundColor="white";
+        document.getElementById("color").style.color="black";
+        document.getElementById("colorbtn").style.backgroundColor="black";
+        document.getElementById("colorbtn").style.color="white";
+    }
+
+    function myFunction3(){
+        document.getElementById("conducta").innerHTML = "Collins Nemi";
+    }
+
+    function myFunction4(){
+        document.getElementById("conducta").innerHTML = "CONDUCTA DJ SET";
+    }
+</script>
+</head>
+<body onclick="myFunction1()" ondblclick="myFunction2()" id="color">
+    <div class="navbar">
+
+        <div class="logo">
+            <img src="BOILERROOMFAN.jpeg" alt="" width="90" height="90">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>   
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="djsets.html">DJ Sets</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <div>
+        <div class="garage">
+            <br>
+            <h1>Garage DJ Set</h1>
+                <p>UK Garage, abbreviated as UKG, is a genre of EDM which originated in England during the early 1990s. Garage House inspired the genre, but it also absorbed various elements from dance-pop, Jungle, and R&B. The UKG genre, in general, is defined by percussive, shuffled rhythm with syncopated hi-hats and snares and cymbals, where it also includes 4/4 house kick pattern or more irregular 2-step rhythms. Other than that, Garage tracks also feature ‘Chopped Up’ and pitch-shifted vocal samples that complement the rhythmic structure at a tempo around ~ 130 BPM.</p>
+                <p>UK Garage has primarily subsumed into other modern music production styles, including bassline, grime, and dubstep. The genre is largely preserved with popular acts such as Conducta and Jeremy Sylvester, who represent two of the best House Sets in the BR platform.</p>
+        </div>
+        <div class="djset">
+        <table>
+            <tr><td><iframe width="600" height="500" src="https://www.youtube.com/embed/tv28hfoWBdo/"></iframe></td><td><a href="https://www.youtube.com/watch?v=dPmHtGJxnFw&ab_channel=BoilerRoom" target="_blank"><img src="https://boilerroom.tv/cdn-cgi/image/width=3150,height=1653,fit=cover,format=auto/https://videos.boilerroom.tv/assets/Screenshot_2021-06-18_at_10.53.37.png" alt="" height="500" width="600"></a></td></tr>
+            <tr><td><h2 onmouseover="myFunction3()" onmouseout="myFunction4()" id="conducta">CONDUCTA DJ SET</h2></td><td><h2>JEREMY SYLVESTERE DJ SET</h2></td></tr>
+            <tr><td><p>Conducta is currently spearheading the new wave of the UK garage scene. His perfect productions, genre-traversing DJ sets, and Kiwi Rekords label made him a fantastic Black British success story in the music industry. In 2012, he released his first full single, ‘Change My World’, and started to regularly appear on major lineups in the UK, which caught the attention of garage legends such as DJ EZ, Tuff Jam, MJ Cole, and Artful Dodger. Furthermore, Conducta has also built a flawless production. He created smooth remixes of popular acts such as J Hus, MoStack, Jorja Smith, Cadenza, Ray BLK, Goldlink, Skrillex, and many others more in the past few years.</p></td><td><p>Jeremy Sylvester is a highly significant figure in the U.K. Garage and House scene. He is a producer, remixer, and D.J. from London UK, while also the founder and managing director of “Urban Dubz” and “Love House Records.” Jeremy has had a significant musical influence since he was a child. His first music encounter was directly exposed by his father, a member of the J.A.L.N. Band that became a successful disco band in the late 70s. He claims a vast backlist of remixes and has been a regular collaborator with many established dance producers. Other than that, he also previously ventured into the Jungle-Drum n Bass production in the early 90s before diving in permanently into mid-tempo dance music.</p></td></tr>
+            <tr><td colspan="2"><form style="display: inline" action="https://boilerroom.tv/genre/garage" method="get" target="_blank">
+                <button id="colorbtn">Watch More</button></form></td></tr>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
