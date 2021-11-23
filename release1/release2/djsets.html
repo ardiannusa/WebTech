@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boilerroomfan - the number 1 site for new Boiler Room fans all around the world" />
+    <meta name="keywords" content="Boiler Room, Boiler Room Fans, DJ, Techno, House, Garage, Underground Music" />
+
+
+    <title>DJ-Sets</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+<style>
+    *{margin: 0;}
+
+    body{
+        background-color:black;
+    }
+
+    h1{
+    text-align:center;
+    color:white;
+    }
+    p{
+    text-align:center;
+    color:white;
+    }
+
+    table{
+        padding-left:8.5%;
+        padding-right:8.5%;
+        padding-top:20px;
+    }
+
+    td{
+    text-align:center;
+    color:white;
+    }
+
+    .background{
+        background-image:url("https://i.ytimg.com/vi/Y1TDir9JdS4/maxresdefault.jpg");
+    }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("h1").click(function(){
+    $("body").addClass("background");
+  });
+});
+</script>
+</head>
+<body>
+    <div class="navbar">
+
+        <div class="logo">
+            <img src="BOILERROOMFAN.jpeg" alt="" width="90" height="90">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>   
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="djsets.html">DJ Sets</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <div class="add" style="opacity:1">
+        <div class="right-side">
+            <div class="right-side-content">
+                <h1>Genres</h1>
+                <br>
+                <p>The DJ Sets broadcasted by BR are mainly dominated by underground EDM genres such as House, Techno and Garage. Click on the picture below to learn more about what each genres represent</p>
+                <br>
+            </div>
+        </div>
+        <table><tr>
+            <td><div class="images-wrapper">
+                <div class="image">
+                    <a href="house.html" target="_blank"><img src="https://sidewalkhustle.com/wp-content/uploads/2012/11/29/Diamond-Ring-DJ-set-at-Soho-House-Toronto-1.jpg" alt="" height="400" width="400"></a>
+                    <div class="image-title">
+                        <h2>HOUSE</h2>
+                    </div>
+                </div>  
+            </div></td> 
+            <td><div class="images-wrapper">
+                <div class="image">
+                    <a href="techno.html" target="_blank"><img src="https://i.ytimg.com/vi/_UYEOeyRm4E/maxresdefault.jpg" alt="" height="400" width="400"></a>
+
+                    <div class="image-title">
+                        <h2>TECHNO</h2>
+                    </div>
+                </div>  
+            </div></td>
+            <td><div class="images-wrapper">
+                <div class="image">
+                    <a href="garage.html" target="_blank"><img src="https://videos.boilerroom.tv/assets/garage_bJkoq0l.jpg" alt="" height="400" width="400"></a>
+
+                    <div class="image-title">
+                        <h2>GARAGE</h2>
+                    </div>
+                </div>  
+            </div></td>
+        </tr></table>
+    </div>
+</body>
+</html>
