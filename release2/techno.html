@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boilerroomfan - the number 1 site for new Boiler Room fans all around the world" />
+    <meta name="keywords" content="Boiler Room, Boiler Room Fans, DJ, Techno, Underground Music, KINK, Sama Abdul Hadi, Bulgaria, Palestine, Daft Pink, Kraftwerk" />
+
+    <title>Techno Genre</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+<style>
+    *{margin: 0;}
+    h1{text-align:center;}
+    .techno p {text-align:center; font-size:13pt; text-indent:20px; line-height:2; padding-top:15px; padding-right:20%; padding-bottom:15px; padding-left:20%;}
+    table{
+        padding-right:5%; 
+        padding-left:1%; 
+        padding-top:20px;
+    }
+    td{
+        margin-left:10px; 
+        vertical-align:top;
+        padding:15px;
+
+
+    }
+    .djset p{
+        line-height:2; 
+        font-size:13pt;
+        text-align:justify;
+
+    }
+
+    button{
+        width: 150px;
+        height:50px;
+		background: black;
+		color:#fff;
+		border:none;
+		cursor:pointer;
+		font-size:18px;
+    }
+
+</style>
+<script>
+    function myFunction1(){
+        document.getElementById("color").style.backgroundColor="black";
+        document.getElementById("color").style.color="white";
+        document.getElementById("colorbtn").style.backgroundColor="white";
+        document.getElementById("colorbtn").style.color="black";
+    }
+
+    function myFunction2(){
+        document.getElementById("color").style.backgroundColor="white";
+        document.getElementById("color").style.color="black";
+        document.getElementById("colorbtn").style.backgroundColor="black";
+        document.getElementById("colorbtn").style.color="white";
+    }
+
+    function myFunction3(){
+        document.getElementById("kink").innerHTML = "Strahil Velchev";
+    }
+
+    function myFunction4(){
+        document.getElementById("kink").innerHTML = "KiNK DJ SET";
+    }
+</script>
+</head>
+<body onclick="myFunction1()" ondblclick="myFunction2()" id="color">
+    <div class="navbar">
+
+        <div class="logo">
+            <img src="BOILERROOMFAN.jpeg" alt="" width="90" height="90">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>   
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="djsets.html">DJ Sets</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="techno">
+            <br>
+            <h1>Techno DJ Set</h1>
+                <p>Techno is a genre of EDM characterized by a repetitive and hard four on the floor beat, which is produced for use in a continuous DJ set. The rhythm is often in common time (4/4), while the tempo varies between 120 to 150 BPM. Techno Artists usually use electronic instruments such as drums, machines, sequencers, synthesizers, and digital audio workstations to produce techno music. Contemporary artists highly prize drum machines from the 1980s, such as Roland’s TR-808 and TR-909, and software emulations of retro instruments are popularly used to refurbish classic tracks.</p>
+                <p>The use of the term “Techno” to refer to the sub-genre in EDM originated in Germany in the early 1980s. Following the UK release of the compilation Techno! The New Dance Sound of Detroit in the UK, the term became closely associated with a unique form of EDM produced in Detroit. Detroit Techno was popularized by Kraftwerk, Giorgio Moroder, and Yellow Magic Orchestra. Today, Techno has become popular underground music in other parts of the world, such as Western Europe, Eastern Europe, South America, and the middle east. Today, the genre is preserved with unique acts such as KiNK and Sama’ Abdulhadi, representing two of the most energetic BR techno sets.</p>
+        </div>
+    <div class="djset">
+        <table>
+            <tr><td><iframe width="600" height="500" src="https://www.youtube.com/embed/LgQw7ea0gx8"></iframe></td><td><a href="https://www.youtube.com/watch?v=x9VYKrtziSg&ab_channel=BoilerRoom" target="_blank"><img src="https://i.ytimg.com/vi/x9VYKrtziSg/maxresdefault.jpg" alt="" height="500" width="600"></a></td></tr>
+            <tr><td><h2 onmouseover="myFunction3()" onmouseout="myFunction4()" id="kink">KINK DJ SET</h2></td><td><h2>SAMA ABDUL HADI DJ SET</h2></td></tr>
+            <tr><td><p>Bulgarian techno producer and DJ KiNK (A.K.A Strahil Velchev) is highly celebrated for his spontaneous and dynamic live performances, in which he utilizes a wide array of analog synthesizers and controllers in real-time. His music productions are playful, experimental, and combine suitable mixes of House, Techno, and Acid, inspired by Jazz and the early rave scene. Since he began attracting international attention around 2008, he has performed at a never-ending list of clubs and festivals worldwide and remixed tracks by famous DJs such as Nina Kraviz, Trentemoller, Matthew Dear, and many more. With releases on Ovum, Rush Hour, and Running Black, his extensive discography includes techno anthems such as 2015’s “Cloud Generator” and “Valentine’s Groove.”</p></td><td><p>Sama Abdulhadi, also known as the “queen of the Palestinian Techno Scene,” has been internationally recognized as a powerful force in dance music for the past five years. Her tenure was temporarily disrupted when her gig in Palestine last year went wrong, threatening not only her career but her safety and freedom as the Palestinian Authority detained her. An artist determined to show her talent in Electronic Music, Sama is currently fighting for her work to be heard and for the rest of the underground techno community to connect with her and the other Palestinian artists. Sirin Kale, a journalist, discovered how Techno saved Sama’s life and how she is rebuilding the techno scene after a difficult time living under Palestinian and Israeli authorities.</p></td></tr>
+            <tr><td colspan="2"><form style="display: inline" action="https://boilerroom.tv/genre/techno" method="get" target="_blank">
+                <button id="colorbtn">Watch More</button></form></td></tr>
+        </table>
+
+    </div>
+</body>
+</html>

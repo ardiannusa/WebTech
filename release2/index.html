@@ -1,0 +1,256 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boilerroomfan - the number 1 site for new Boiler Room fans all around the world" />
+    <meta name="keywords" content="Boiler Room, Boiler Room Fans, DJ, Techno, House, Garage, Underground Music" />
+    
+    <title>BRFan</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Table Tag and colspanpan can be found in line 93-100 at the sweatshirt and tshirt page. Other than that it can also be found in the techno, garage, and house page -->
+<!-- Bulleted with one or more indented sub-lists can be found in line 99-115 at the awards page-->
+<!-- Contact page and form with PHP mailer can be found in line 217-242 at the contact us page -->
+<!-- An image map with at least two hot spots on a single image can be found in line 46-49 at the about page-->
+<!-- Videos can be found at the in line 146-260 at the history page -->
+<!-- Background music can be found in line 141 at the index page -->
+<!-- [JAVASCRIPT REQ1] the javascript function that changes the style of some element on a page in response to user action can be found on the House, Techno and Garage page by clicking/double clicking the page. The javascript code can be found between line 46-66 on each page-->
+<!-- [JAVASCRIPT REQ2] the javascript function that changes the text on some page in response to user action can be found on the House, Techno, and Garage page when users hover through the name of the DJ's stage name, in which the javascript will reveal the DJ's real name (i.e DJ Boring = Tristan Hallis). The javascript code can be found between line 46-66 on each page-->
+<!-- [JAVASCRIPT REQ3] the javascript function that validates a form can be found on the contact page. When users do not answer the question of the form, it will pop up an alert reminding users to answer the question. The javascript code can be found between line 164-194 -->
+<!-- [JAVASCRIPT REQ4] the javascript function that changes image via slideshow can be seen on the home page. the slideshow animation will round automatically when users load the site. The javascript code can be found between line 237-263 -->
+<!-- [JAVASCRIPT REQ5] the javascript function that shows animation can be found on the homepage and on the events page. On the homepage, users can found animation by clicking the 'underground' word, in which the word will change randomly to 'house', 'techno', or 'garage' every 500 miliseconds. On the other events page, animation can be found when user clicks anywhere in the body, in which the opacity of the page will increase and decrease continuously to resemble the lighting in a festival-->
+<!-- [JAVASCRIPT REQ6] tha javascript function that produce some effect on a page due randomness can be found on the homepage and event page. Whenever users click the 'underground' word, the javascript will trigger an animation that randomly changes the word to either house, techno or garage. The similar function can be found on the events page. Whenever users load the page, the word 'event' will be changed to different translations in 5 different languages randomly-->
+<!-- [JQuery REQ1] The JQuery slideshow effect can be found on the history page. When users click the "below are the timeline of the amazing journey...", JQuery will trigger the slideshow that reveals the platform's historical timeline-->
+<!-- [JQuery REQ2] The JQuery animation effect can be found on the award page. When users click any part of the page, the opacity of the page will be reduced to 0.8, and the font size of the page will increase by +5px-->
+<!-- [JQuery REQ3] The JQuery show/hide effect can be found on the sweatshirt and tshirt page. When user click anywhere below the first div, the JQuery function will show the text description of the products. On the other hand, whenever users click on anywhere on the first div (between H1-P), the JQuery will hide the description of the products -->
+<!-- [JQuery REQ4] The JQuery addClass effect can be found on the DJset/Genres page. When the user add the H1 title 'Genres', a new class which contains a techno themed background image will pop up in the body's background-->
+<!-- No significant changes from the original proposal, but I decided to put all the info about BR in the About Us Page instead of putting some if it in the homepage -->
+<!-- [SEO Requirements] to attain the point that I lost before, I have added a meta tag on each of the page in the release2 site with description and keywords that optimizes the SEO of the website -->
+
+<style>
+*{margin: 0;}
+.home{
+    padding: 50px 50px;
+    position: relative;
+    width: 93.05%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: black;
+    color:white;
+}
+
+.home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+}
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .content h1{
+    font-size: 3.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.home .content p{
+    margin-bottom: 65px;
+    font-size: 15pt;
+    line-height:1.5;
+}
+
+
+button{
+    padding: 15px 35px;
+    border:0;
+    background:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+.home .media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s;
+}
+
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+    transform: scale(1.3);
+}
+
+.home img{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer; 
+    display: none;
+}
+
+span{
+    font-size: 3.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    color:grey;
+}
+
+.audio{
+    color:white;
+}
+
+@media (max-width: 1040px){
+    header{
+        padding: 12px 20px;
+    }
+
+    section{
+        padding: 100px 20px;
+    }
+
+    .home .media-icons{
+        right: 15px;
+    }
+}
+
+/* Position the "next button" to the right */
+
+</style>
+<script>
+
+// <![CDATA[  
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+	if (mobile) {  
+        	document.location="projectMobile.html"
+	}
+// ]]>
+
+var words = new Array("Underground","House","Techno","Garage");
+
+	function newWord()
+	{
+		var wordNumber=Math.floor(Math.random()*words.length);
+		document.getElementById("rand").innerHTML=words[wordNumber];
+        setTimeout("newWord()",500);
+	}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);
+  }
+
+</script>
+</head>
+<body onload="carousel()">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="BOILERROOMFAN.jpeg" alt="" width="90" height="90">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>   
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="djsets.html">DJ Sets</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="home">
+            <div class="mySlides">
+                <img src="https://boilerroom.tv/cdn-cgi/image/width=3150,height=1653,fit=cover,format=auto/https://videos.boilerroom.tv/assets/5717_Y1high_resolution.jpg" alt="Peggy Gou" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="https://s1.dmcdn.net/v/HQH5Q1Ul66eSoFAqk/x1080" alt="Black Madonna" style="width:100%; background-color:rgba(0,0,0,0.8)">
+            </div>
+            <div class="mySlides">
+                <img src="https://mixing.dj/wp-content/uploads/2014/08/nina-kraviz.jpg" alt="Nina Kraviz" style="width:100%; background-color:rgba(0,0,0,0.8)">
+            </div>
+            <div class="mySlides">
+                <img src="https://videos.boilerroom.tv/assets/GJ_TH.jpeg" alt="Gerd Janson" style="width:100%; background-color:rgba(0,0,0,0.8)">
+            </div>
+            <div class="mySlides">
+                <img src="https://s1.dmcdn.net/v/GRLZ01Ul66uoIL8aD/x1080" alt="Mall Grab" style="width:100%; background-color:rgba(0,0,0,0.8)">
+            </div>
+            <div class="content">
+                <h1><span style="color:white">The</span> <span onclick="newWord()" id="rand">Underground</span> <span style="color:white">Never Dies</span>.<br><span style="color:white">Welcome to BR Fanpage</span></h1>
+                <p>Since its foundation in 2010, BR has been in the frontline in preserving the underground electronic music culture amidst the influx of pop music on mainstream media.
+                    Learn more about the journey of this amazing platform by browsing through this fanpage. 
+                </p>
+                <form style="display: inline" action="about.html" method="get" target="_blank"><button>Read More</button></form>
+            </div>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/boilerroom.tv" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/boilerroomtv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCGBpxWJr9FNOcFYA5GkKrMg" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/boilerroomtv/?hl=en" target="_blank" class="fa fa-instagram"></a>            
+            </div>
+        </div>
+    </div>
+    <div class="audio" style="display:none">
+        <audio controls autoplay>
+            <source src="Peggy_Gou_-_It_Makes_You_Forget_Itgehane_(djlist.net).mp3.crdownload" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html>
