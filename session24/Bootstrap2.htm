@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title> 
+  <!--  Bootstrap2.htm -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+  img {width: 200px; height: 200px};
+</style>
+<script>
+  $(function(){
+    $("#p1").text("This is paragraph #1");
+    $("#i1").click(function(){
+      document.getElementById("#i1").src=document.getElementById("#i2").src
+    });
+  });
+
+
+</script>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="https://www.google.com/">Google</a></li>
+      <li><a href="https://www.babson.edu/">Babson</a></li>
+      <li><a href="https://www.amazon.com/">Amazon</a></li>
+      <li><a href="https://www.bing.com/">Bing</a></li>
+    </ul>
+    </div>
+    </nav>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>My first Bootstrap website!</h1>
+    <p>This is going to be a subtitle </p>
+  </div>
+    <div class="row">
+      <div class="col-sm-4" style="background-color:red">
+      <p id="p1">This is first paragragh.</p>
+      <p>This is second paragraph.</p>
+    </div>
+    <div class="col-sm-6" style="background-color:blue">
+      <p>This is third paragraph.</p>
+      <p>This is fourth paragraph.</p>
+    </div>
+    <div class="col-sm-2" style="background-color:gold">
+      <p>This is fifth paragraph.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:salmon">
+      <img src="flag.jpg" alt="flag" id="i1">
+    </div>
+    <div class="col-sm-4" style="background-color:silver">
+      <img src="ARDIAN OPT PHOTO.jpeg" alt="flag" id="i2">
+    </div>
+    <div class="col-sm-4" style="background-color:green">
+      <img src="flag.jpg" alt="flag">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8" style="background: yellow">
+      <p>This is the sixth paragraph</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
