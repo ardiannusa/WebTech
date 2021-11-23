@@ -1,0 +1,268 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+   
+    
+    <link rel="apple-touch-icon" sizes="128x128" href="BOILERROOMFAN.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="description" content="Boilerroomfan - the number 1 site for new Boiler Room fans all around the world" />
+    <meta name="keywords" content="Boiler Room, Boiler Room Fans, DJ, Techno, House, Garage, Underground Music" />
+    <title>BRFan</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+*{margin: 0;}
+.home{
+    padding: 50px 50px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: black;
+    color:white;
+    margin-right:20px;
+}
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .content h1{
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.home .content p{
+    margin-bottom: 65px;
+    font-size: 15pt;
+}
+
+
+button{
+    padding: 15px 35px;
+    border:0;
+    background:white;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.media-icons{
+   height: 13px;
+   margin: 30px;
+   cursor: pointer;
+   text-align:center;
+   background: black;
+}
+
+.media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s;
+}
+
+.media-icons a:hover{
+    transform: scale(1.3);
+}
+
+.home img{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-icon{
+    width: 40px;
+    height: 40px;
+    cursor: pointer; 
+    display: none;
+}
+
+span{
+    font-size: 3.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    color:grey;
+}
+
+@media only screen and (max-width: 480px)  {
+
+	.topnav {
+        overflow: hidden;
+        background-color: black;
+        position: relative;
+    }
+
+    .topnav a {
+        color: white; 
+        padding: 14px 16px;
+        font-size: 17px;
+        display: block;
+        text-decoration: none;
+
+    }
+
+    .topnav a:hover{
+        background-color: rgba(0,0,0,0.5);
+        color: black;
+    }
+
+    .active {
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+    }
+
+    .home{
+        padding: 0px;
+        margin-right:20px;
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute; 
+        right: 0;
+        top: 0;
+    }
+
+    .content{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .home .content h1{
+    font-size: 2.8em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+    .myslides{
+        width: 100%;
+    }
+
+}
+
+/* Position the "next button" to the right */
+
+
+</style>
+<script>
+
+var words = new Array("Underground","House","Techno","Garage");
+
+	function newWord()
+	{
+		var wordNumber=Math.floor(Math.random()*words.length);
+		document.getElementById("rand").innerHTML=words[wordNumber];
+        setTimeout("newWord()",500);
+	}
+
+var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000);
+    }
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+</script>
+</head>
+<body style="background-color: black" onload="carousel()" >
+    <div class="container">
+        <div class="topnav">
+            <div class="logo">
+                <img src="BOILERROOMFAN.jpeg" alt="" width="80" height="80">
+            </div>
+            <div id="myLinks">
+                <a href="index.html">Home</a>  
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="history.html">History</a>
+                <a href="awards.html">Awards</a>
+                <a href="events.html">Events</a>
+                <a href="djsets.html">DJ Sets</a>
+                <a href="merchandise.html">Merchandise</a>
+                <a href="credits.html">Credits</a>
+            </div>
+            <a href="javascript:void(0);" onclick="myFunction()"><img src="menuicon.png" alt="menu icon" class="menu-icon" width="80" height="80"></a>
+        </div>
+        <div class="home">
+            <div class="mySlides">
+                <img src="https://boilerroom.tv/cdn-cgi/image/width=3150,height=1653,fit=cover,format=auto/https://videos.boilerroom.tv/assets/5717_Y1high_resolution.jpg" alt="Peggy Gou" style="width:100%; background-color:rgba(0,0,0,0.8)">
+            </div>
+            <div class="mySlides">
+                <img src="https://s1.dmcdn.net/v/HQH5Q1Ul66eSoFAqk/x1080" alt="Black Madonna" style="width:100%; background-color:rgba(0,0,0,0.8)">
+            </div>
+            <div class="mySlides">
+                <img src="https://mixing.dj/wp-content/uploads/2014/08/nina-kraviz.jpg" alt="Nina Kraviz" style="width:100%; background-color:rgba(0,0,0,0.8)">
+            </div>
+            <div class="mySlides">
+                <img src="https://videos.boilerroom.tv/assets/GJ_TH.jpeg" alt="Gerd Janson" style="width:100%; background-color:rgba(0,0,0,0.8)">
+            </div>
+            <div class="mySlides">
+                <img src="https://s1.dmcdn.net/v/GRLZ01Ul66uoIL8aD/x1080" alt="Mall Grab" style="width:100%; background-color:rgba(0,0,0,0.8)">
+            </div>
+            <div class="content">
+                <h1><span style="color:white">The</span> <span onclick="newWord()" id="rand">Underground</span> <span style="color:white">Never Dies</span></h1>
+                <p>Learn more about the journey of this amazing platform by browsing through this fanpage. </p>
+                <form style="display: inline" action="about.html" method="get" target="_blank"><button>Read More</button></form>
+            </div>
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/boilerroom.tv" target="_blank" class="fa fa-facebook"></a>
+            &nbsp;
+            <a href="https://twitter.com/boilerroomtv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter"></a>
+            &nbsp;
+            <a href="https://www.youtube.com/channel/UCGBpxWJr9FNOcFYA5GkKrMg" class="fa fa-youtube"></a>
+            &nbsp;
+            <a href="https://www.instagram.com/boilerroomtv/?hl=en" target="_blank" class="fa fa-instagram"></a>            
+        </div>
+    </div>
+    <div class="audio" style="display:none">
+        <audio controls autoplay>
+            <source src="Peggy_Gou_-_It_Makes_You_Forget_Itgehane_(djlist.net).mp3.crdownload" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html>
