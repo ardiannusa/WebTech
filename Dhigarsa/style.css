@@ -444,6 +444,10 @@ footer .input-group .input-group-text{
     border:none;
 }
 
+footer a{
+    background: none;
+}
+
 footer.column a + a{
     padding: 0 0.5em;
 }
@@ -462,7 +466,6 @@ footer.column a + a{
 .input-group-text{
     height:101%;
 }
-
 
 .sticky{
     position:fixed;
