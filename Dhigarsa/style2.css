@@ -216,6 +216,11 @@ span {
     font-family: var(--Lato-font);
 }
 
+.section-2 img{
+    background: rgba(0,0,0,0.7);
+    height: 70%;
+}
+
 .section-3{
     height:100%;
     background:var(--bggradient);
