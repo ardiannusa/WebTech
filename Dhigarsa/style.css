@@ -458,7 +458,6 @@ footer.column a + a{
 }
 
 .d-flex .btn{
-    background:var(--bggradient);
     color:whitesmoke;
     border:none;
 }
