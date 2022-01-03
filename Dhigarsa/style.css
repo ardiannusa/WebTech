@@ -444,10 +444,6 @@ footer .input-group .input-group-text{
     border:none;
 }
 
-footer .column a{
-    background: var(--bggradient);
-}
-
 footer.column a + a{
     padding: 0 0.5em;
 }
@@ -460,6 +456,7 @@ footer.column a + a{
 .d-flex .btn{
     color:whitesmoke;
     border:none;
+    background: var(--bggradient);
 }
 
 .input-group-text{
