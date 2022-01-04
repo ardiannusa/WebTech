@@ -456,6 +456,7 @@ font-size:3vmin;
 
 .section-4 .content p{
     font-size: 12min;
+    text-align: justify;
     }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
