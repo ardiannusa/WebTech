@@ -612,6 +612,11 @@ footer .input-group .input-group-text{
     border:none;
 }
 
+footer a{
+    background: none;
+    color: white;
+}
+
 footer .column i{
     color: var(--bggradient);
 }
