@@ -612,8 +612,7 @@ footer .input-group .input-group-text{
     border:none;
 }
 
-footer a{
-    background: none;
+footer a .fa{
     color: white;
 }
 
