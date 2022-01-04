@@ -216,10 +216,7 @@ span {
     font-family: var(--Lato-font);
 }
 
-.section-2 img{
-    background: rgba(0,0,0,0.7);
-    height: 80vmin;
-}
+
 
 .section-3{
     height:100%;
