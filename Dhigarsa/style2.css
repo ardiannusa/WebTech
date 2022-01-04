@@ -353,7 +353,6 @@ font-size:3vmin;
     font-size:6vmin;
     padding-top:3vmin;
     color: whitesmoke;
-    
     }
 
 /* The actual timeline (the vertical ruler) */
@@ -449,7 +448,15 @@ font-size:3vmin;
     background-color: white;
     position: relative;
     border-radius: 0.4375rem;
-  }
+    }
+
+.section-4 .content h2{
+    font-size: 4vmin;
+    }
+
+.section-4 .content p{
+    font-size: 12min;
+    }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
