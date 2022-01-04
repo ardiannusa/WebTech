@@ -621,7 +621,7 @@ footer .column i{
     color: var(--bggradient);
 }
 
-footer.column i + i{
+footer.column a + a{
     padding: 0 0.5em;
 }
 
