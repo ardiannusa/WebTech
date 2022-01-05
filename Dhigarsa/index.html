@@ -16,39 +16,24 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff"> 
-
-    <style>
-
-#slideshow { 
-  margin: auto; 
-  position: relative; 
-}
-
-#slideshow > div { 
-  position: absolute; 
-  top: 10px; 
-  left: 10px; 
-  right: 10px; 
-  bottom: 10px; 
-}
-
-    </style>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
-$("#slideshow > div:gt(0)").hide();
+var myIndex = 0;
+carousel();
 
-setInterval(function() { 
-  $('#slideshow > div:first')
-  .fadeOut(3000)
-  .next()
-  .fadeIn(3000)
-  .end()
-  .appendTo('#slideshow');
-}, 3000);
-
-
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("col-md-5");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 6000);
+  }
 
 function myFunction1()
 {
@@ -133,7 +118,6 @@ function myFunction1()
                     <p>Dhigarsa is an investment platform specific for sustainable aquaculture farm production that has low risks, low environmental footprint, and high Return Of Investment (ROI).</p>
                     <a href="#portfolio"><button class="btn btn-light px-5 py-2">Check Portfolio</button></a>
                 </div>
-                <div id="slideshow">
                     <div class="col-md-5 col-sm-12">
                         <img src="TAMBAK.jpeg" alt="Background" class="img-fluid" width="400" height="400">
                     </div>
@@ -146,7 +130,6 @@ function myFunction1()
                     <div class="col-md-5 col-sm-12">
                         <img src="TAMBAK4.jpeg" alt="Background" class="img-fluid" width="400" height="400">
                     </div>
-                </div>
             </div>
         </div>
     </header>
