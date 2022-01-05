@@ -20,41 +20,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
-let navbar = $(".navbar");
+var myIndex = 0;
+carousel();
 
-$(window).scroll(function(){
-    let oTop = $(".section-2").offset().top - window.innerHeight;
-    if($(window).scrollTop()>oTop){
-        navbar.addClass("sticky");
-    } else {
-        navbar.removeClass("sticky");
-    }
-});
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("col-md-5");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);
+  }
 
-let nCount = function(selector){
-    $(selector).each(function(){
-        $(this).animate(
-            {
-                Counter: $(this).text()
-            },
-            {
-                duration:4000,
-                easing: "swing",
-                step: function(value){
-                    $(this).text(Math.cell(value));
-                }
-            }
-        );
-    });
-};
 
-$(window).scroll(function(){
-    let oTop = $(".numbers").offset().top - window.innerHeight;
-    if(a==0 && $(window).scrollTop()>=oTop){
-        a++;
-        nCount(".rect>h1");
-    }
-});
 
 function myFunction1()
 {
@@ -96,7 +77,7 @@ function myFunction1()
     </script>
 
 </head>
-<body>
+<body onload="carousel()">
     <header>
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg">
@@ -141,6 +122,15 @@ function myFunction1()
                 </div>
                 <div class="col-md-5 col-sm-12">
                     <img src="TAMBAK.jpeg" alt="Background" class="img-fluid" width="400" height="400">
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="TAMBAK2.jpeg" alt="Background" class="img-fluid" width="400" height="400">
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="TAMBAK3.jpeg" alt="Background" class="img-fluid" width="400" height="400">
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="TAMBAK4.jpeg" alt="Background" class="img-fluid" width="400" height="400">
                 </div>
             </div>
         </div>
