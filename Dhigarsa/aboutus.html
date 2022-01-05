@@ -21,6 +21,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+	if (mobile) {  
+        	document.location="mobilehomepage.html"
+    }
+
 function myFunction1()
 {
 		if(document.getElementById("name").value == "")
@@ -188,7 +193,7 @@ function myFunction1()
                     <div class="container left">
                       <div class="content">
                         <h2>December 2021</h2>
-                        <p>On December 2021, we were able to succesfully finish our first cycle harvest.</p>
+                        <p>On December 2021, we were able to succesfully finish our first cycle harvest. All of the harvested shrimp were sold to various third party wholesaler based in subang, who sells our shrimps to various seafood processing companies in Java.</p>
                       </div>
                     </div>
                     <div class="container right">
