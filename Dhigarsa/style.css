@@ -73,6 +73,7 @@ header .row .col-md-7{
 
 header .row .col-md-5 img{
     width:90%;
+    position: absolute;
 }
 
 header .container .col-md-7 h6{
