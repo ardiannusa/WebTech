@@ -136,7 +136,10 @@ header .container .col-md-7 button{
 
 }
 
-.cover{
+.section-2 {
+    padding-bottom: 3vmin;
+}
+.section-2 .cover{
     width: 100%;
     height:55vmin;
     background:url(https://images-global.nhst.tech/image/Vkp3RDBpZXJaQXA5SFdiazh6MGc0cTErOUxVV2UzKzhHYWdVWEYzWkZPWT0=/nhst/binary/07ea5c8f09621fdd19358b8e68797d20);
@@ -146,7 +149,7 @@ header .container .col-md-7 button{
 
 }
 
-.cover .content{
+.section-2 .cover .content{
     background: rgba(0,0,0,0.7);
     height:100%;
     width:100%;
@@ -155,13 +158,13 @@ header .container .col-md-7 button{
     padding-left: 5vmin;
 }
 
-.cover .content>h1{
+.section-2 .cover .content>h1{
     font-family:var(--Lato-font);
     font-size:6vmin;
     color:whitesmoke; 
 }
 
-.cover .content>p{
+.section-2 .cover .content>p{
     font-family:var(--Poppins);
     font-size:2vmin;
     color:whitesmoke; 
@@ -169,7 +172,7 @@ header .container .col-md-7 button{
 
 }
 
-.numbers .rect{
+.section-2 .numbers .rect{
     position: relative;
     z-index:1;
     background: var(--bggradient);
@@ -183,7 +186,7 @@ header .container .col-md-7 button{
 
 }
 
-.numbers .rect h1{
+.section-2 .numbers .rect h1{
     font-size:3.5rem;
     color: whitesmoke;
 }
