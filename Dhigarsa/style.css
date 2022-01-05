@@ -188,6 +188,10 @@ header .container .col-md-7 button{
     color: whitesmoke;
 }
 
+.value {
+    background: var(--bggradient);
+}
+
 .value .one{
     display: flex;
     flex-direction: column;
@@ -196,6 +200,7 @@ header .container .col-md-7 button{
     text-align: center;
     padding: 2rem 1.5rem;
     font-size:2vmin;
+    color: white;
 
 }
 
@@ -204,6 +209,7 @@ header .container .col-md-7 button{
     padding: 0.4em 0;
     font-size: 2em;
     font-family: var(--Lato-font);
+    color: whitesmoke;
 }
 
 .value h5{
