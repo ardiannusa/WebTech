@@ -4,17 +4,21 @@
     }
 
     header .container .heading .head{
-        width:500px;
+        width:700px;
     }
 
     header .container .heading .head h1{
-        margin-right: 60vmin;
-        width: 150px;
+        margin-right: 200px;
+        margin-left: -35px;
+        padding: 0px;
+        width: 190px;
     }
 
     header .container .heading .head p{
-        margin-right: 60vmin;
-        width: 150px;
+        margin-right: 200px;
+        margin-left: -35px;
+        padding: 0px;
+        width: 190px;
     }
 
     .section-1 {
