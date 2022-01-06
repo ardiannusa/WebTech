@@ -191,11 +191,11 @@ header .container .col-md-7 button{
     color: whitesmoke;
 }
 
-.section-3 .value {
+.section-3{
     background: var(--bggradient);
 }
 
-.section-3 .value .one{
+.section-3 .one{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,7 +207,7 @@ header .container .col-md-7 button{
 
 }
 
-.section-3 .value h2{
+.section-3 h2{
     font-weight: bold;
     padding: 0.4em 0;
     font-size: 2em;
@@ -215,7 +215,7 @@ header .container .col-md-7 button{
     color: whitesmoke;
 }
 
-.section-3 .value h5{
+.section-3 h5{
     font-weight: bold;
     padding: 0.4em 0;
     font-size: 1.3em;
