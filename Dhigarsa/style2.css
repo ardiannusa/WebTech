@@ -556,6 +556,10 @@ font-size:3vmin;
     bottom: 0;
 }
 
+.team .img-box img{
+    border-radius:50%;
+}
+
 .team .img-box ul {
     margin: 0;
     padding: 20px 0;
