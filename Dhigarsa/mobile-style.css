@@ -22,31 +22,6 @@
         font-size:2rem;
     }
 
-    .section-3{
-        height:inherit;
-        padding:10vmin !important;
-    }
-
-    .section-3 h1{
-        padding: 6vmin 4vmin;
-    }
-
-    .section-3 .container {
-        text-align: center !important;
-    }
-
-    .section-3 .box i{
-        font-size: 8vmin;
-    }
-
-    .section-3 .contactInfo{
-        display:inline-block;
-    }
-
-    .section-3 .contactForm{
-        display:inline-block;
-    }
-
     .section-4 .carousel-item{
         padding-left:0.6rem;
     }
@@ -60,6 +35,32 @@
     .section-4 .carousel-inner{
         width:24rem;
     }
+
+    .section-5{
+        height:inherit;
+        padding:10vmin !important;
+    }
+
+    .section-5 h1{
+        padding: 6vmin 4vmin;
+    }
+
+    .section-5 .container {
+        text-align: center !important;
+    }
+
+    .section-5 .box i{
+        font-size: 8vmin;
+    }
+
+    .section-5 .contactInfo{
+        display:none;
+    }
+
+    .section-5 .contactForm{
+        display:block;
+    }
+
 
     @media only screen and (max-width:425px){
         footer .row .col-md-2{
