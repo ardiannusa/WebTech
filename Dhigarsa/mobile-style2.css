@@ -3,18 +3,22 @@
         padding-left:1rem;
     }
 
-    header .col-md-7 {
-        margin-bottom: -30vmin;
+    header .container .heading .head{
+        width:500px;
     }
 
-    header .col-md-5 img {
-        margin-left: 5vmin;
-        margin-right: 5vmin;
-        margin-bottom: 5vmin;
+    header .container .heading .head h1{
+        margin-right: 60vmin;
+        width: 150px;
+    }
+
+    header .container .heading .head p{
+        margin-right: 60vmin;
+        width: 150px;
     }
 
     .section-1 {
-        height: 150vmin;
+        height: 230vmin;
     }
     
     .section-2 .cover{
