@@ -100,13 +100,13 @@
     }
     
     .section-5 .contactForm{
-        margin-top: 100vmin;
-        margin-left: -50vmin;
+        margin-top: 120vmin;
+        margin-left: -51vmin;
         display:block;
     }
 
     .section-5 .contactForm .inputBox{
-        width: 400px;
+        width: 300px;
 		color: white;
 		border:none;
 		cursor:pointer;
@@ -114,7 +114,6 @@
 		font-size:20px;
         font-family: var(--Lato-font);
     }
-
 
     footer .row .col-md-2{
         margin-top: 8vmin;
