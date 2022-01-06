@@ -72,18 +72,15 @@
     }
 
     .section-4 .sukaasih{
-        margin-left: 5vmin;
-        margin-right: 5vmin;
+        margin-left: -6vmin;
     }
 
     .section-4 .project2{
-        margin-left: 5vmin;
-        margin-right: 5vmin;
+        margin-left: -6vmin;
     }
 
     .section-4 .project3{
-        margin-left: 5vmin;
-        margin-right: 5vmin;
+        margin-left: -6vmin;
     }
 
 
@@ -123,13 +120,13 @@
     }
     
     .section-5 .contactForm{
-        margin-top: 100vmin;
-        margin-left: -50vmin;
+        margin-top: 120vmin;
+        margin-left: -51vmin;
         display:block;
     }
 
     .section-5 .contactForm .inputBox{
-        width: 400px;
+        width: 300px;
 		color: white;
 		border:none;
 		cursor:pointer;
