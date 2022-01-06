@@ -3,6 +3,16 @@
         padding-left:1rem;
     }
 
+    header .col-md-7 {
+        margin-bottom: -30vmin;
+    }
+
+    header .col-md-5 img {
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        margin-bottom: 5vmin;
+    }
+
     .section-1 .row .col-md-6 .panel{
         position:initial;
         width:initial;
@@ -11,6 +21,35 @@
 
     .section-2 .cover{
         background-position: -25vmin -10vmin;
+    }
+
+    .section-2 .cover .content h1{
+        font-size: 7vmin;
+    }
+
+    .section-2 .cover .content p{
+        display: none;
+    }
+
+    .section-3 .row {
+        display: block;
+        padding-left: 45vmin;
+        padding-right: 45vmin;
+    }
+
+    .section-3 img{
+        width: 200px;
+        height: 200px;
+        display: initial;
+    }
+    .section-3 h5{
+        width: 200px;
+        font-size: 6vmin;
+    }
+
+    .section-3 p{
+        width: 200px;
+        font-size: 3vmin;
     }
 
     .numbers .rect{
@@ -32,6 +71,22 @@
         align-content: center;
     }
 
+    .section-4 .sukaasih{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+    }
+
+    .section-4 .project2{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+    }
+
+    .section-4 .project3{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+    }
+
+
     .section-4 .carousel-inner{
         width:24rem;
     }
@@ -49,32 +104,42 @@
         text-align: center !important;
     }
 
+    .section-5 .box{
+        display:none;
+    }
+
     .section-5 .box i{
         font-size: 8vmin;
     }
 
-    .section-5 .contactInfo{
-        display:none;
+    .section-5 .contactInfo {
+        margin-left: 5vmin;
+        margin-right: 5vmin;
     }
 
+    .section-5 .contactInfo p{
+        font-size: 3vmin;
+        width: 35vmin;
+    }
+    
     .section-5 .contactForm{
+        margin-top: 100vmin;
+        margin-left: -50vmin;
         display:block;
     }
 
+    .section-5 .contactForm .inputBox{
+        width: 400px;
+		color: white;
+		border:none;
+		cursor:pointer;
+		padding:0px;
+		font-size:20px;
+        font-family: var(--Lato-font);
+    }
 
-    @media only screen and (max-width:425px){
         footer .row .col-md-2{
             margin-top: 8vmin;
         }
-    }
-
-    @media only screen and (max-width:320px){
-        .section-4 .card{
-            width: 18rem;
-        }
-
-        .section-4 .carousel-inner{
-            margin-left:-14vmin;
-        }
-    }
+   
 }
