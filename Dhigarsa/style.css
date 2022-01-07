@@ -150,7 +150,7 @@ header .container .col-md-7 button{
     background: rgba(0,0,0,0.7);
     height:100%;
     width:100%;
-    padding-top:19vmin;
+    padding-top:12vmin;
     padding-right: 5vmin;
     padding-left: 5vmin;
 }
@@ -165,7 +165,7 @@ header .container .col-md-7 button{
     font-family:var(--Poppins);
     font-size:2vmin;
     color:whitesmoke; 
-    line-height:1.5;
+    line-height:2;
     padding-left: 70px;
     padding-right: 70px;
 
