@@ -166,6 +166,8 @@ header .container .col-md-7 button{
     font-size:2vmin;
     color:whitesmoke; 
     line-height:1.5;
+    padding-left: 70px;
+    padding-right: 70px;
 
 }
 
