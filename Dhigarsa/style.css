@@ -165,7 +165,7 @@ header .container .col-md-7 button{
     font-family:var(--Poppins);
     font-size:2vmin;
     color:whitesmoke; 
-    line-height:2;
+    line-height:1.5;
     padding-left: 70px;
     padding-right: 70px;
 
