@@ -130,9 +130,9 @@ header .container .col-md-7 button{
 }
 
 .section-1 .row .col-md-6 .panel p{
-    font-size: 0.9em;
-    color: rgba (0,0,0,0.5);
-    font-family:var(--Poppins);
+    font-size: 1em;
+    color: rgba(0,0,0,0.5);
+    font-family: var(--Lato-font);
 
 }
  
