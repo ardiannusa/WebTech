@@ -217,7 +217,15 @@ span {
     font-family: var(--Lato-font);
 }
 
+.section-2 .cover p{
+    padding-left: 60px;
+    padding-right: 60px;
+}
 
+.section-2 .row p{
+    width: 280px;
+    font-size: 1em;
+}
 
 .section-3 {
     background:var(--bggradient);
