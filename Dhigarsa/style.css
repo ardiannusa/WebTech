@@ -123,7 +123,7 @@ header .container .col-md-7 button{
     z-index:1;
 }
 
-.section-1 .row .col-md-6 .panel h1{
+.section-1 .row .col-md-6 .panel h2{
     font-weight: bold;
     padding: 0.4em 0;
     font-size: 2em;
@@ -155,7 +155,7 @@ header .container .col-md-7 button{
     padding-left: 5vmin;
 }
 
-.section-2 .cover .content>h1{
+.section-2 .cover .content>h2{
     font-family:var(--Lato-font);
     font-size:6vmin;
     color:whitesmoke; 
@@ -189,7 +189,7 @@ header .container .col-md-7 button{
 
 }
 
-.section-2 .numbers .rect h1{
+.section-2 .numbers .rect h2{
     font-size:3.5rem;
     color: whitesmoke;
 }
@@ -225,7 +225,7 @@ header .container .col-md-7 button{
     font-family: var(--Lato-font);
 }
 
-.section-4 .container h1{
+.section-4 .container h2{
     font-size:6vmin;
     padding-top:10vmin;
 
@@ -293,7 +293,7 @@ max-width:700px;
 text-align:center;
 }
 
-.section-5 .heading h1{
+.section-5 .heading h2{
 font-size: 36px;
 font-weight:500;
 color:#fff;}
