@@ -95,7 +95,7 @@ header .row .col-md-5{
     width: 100%;
 }
 
-.container .col-md-6 h1{
+.container .col-md-6 h2{
     font-size: 7vmin;
     font-weight:bold;
     padding-left: 8vmin;
@@ -126,7 +126,7 @@ span {
     height:80vmin;
 }
 
-.section-1 .row .col-md-6 .panel h1{
+.section-1 .row .col-md-6 .panel h2{
     font-weight: bold;
     padding: 0.4em 0;
     font-size: 2em;
@@ -178,7 +178,7 @@ span {
     padding-left: 5vmin;
 }
 
-.cover .content>h1{
+.cover .content>h2{
     font-family:var(--Lato-font);
     font-size:6vmin;
     color:whitesmoke; 
@@ -203,7 +203,7 @@ span {
     background: none;
 }
 
-.section-2 h1{
+.section-2 h2{
     font-weight: bold;
     padding: 0.4em 0;
     font-size: 2em;
@@ -232,7 +232,7 @@ span {
     box-sizing: border-box;
     }
 
-.section-3 h1{
+.section-3 h2{
     font-size:6vmin;
     padding-top:3vmin;
     color: whitesmoke;
@@ -335,6 +335,7 @@ span {
 
 .section-3 .content h2{
     font-size: 4vmin;
+    color: black;
     }
 
 .section-3 .content p{
@@ -389,7 +390,7 @@ span {
 }
 
 
-.section-4 h1 {
+.section-4 h2 {
     text-align: center;
     font-weight: bold;
     color: black;
@@ -398,14 +399,14 @@ span {
 
 }
 
-.section-4 h1:after {
+/*.section-4 h2:after {
     content: '';
-    background: #333;
+    background: black;
     display: block;
     height: 3px;
     width: 150px;
     margin: 10px auto;
-}
+}*/
 
 .section-4 .profile {
     margin-top: 25px;
@@ -417,13 +418,13 @@ span {
     position: relative;
 }
 
-.section-4 .profile h2{
+.section-4 .col-md-4 h2{
     font-size: 22px;
     font-weight: bold;
     margin-top: 15px;
 }
 
-.section-4 .profile h3 {
+.section-4 .col-md-4 h3 {
     font-size: 15px;
     font-weight: bold;
     margin-top: 15px;
@@ -517,7 +518,7 @@ max-width:700px;
 text-align:center;
 }
 
-.section-5 .heading h1{
+.section-5 .heading h2{
 font-size: 36px;
 font-weight:500;
 color:#fff;}
