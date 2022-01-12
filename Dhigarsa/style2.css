@@ -430,6 +430,12 @@ span {
     margin-top: 15px;
 }
 
+.section-4 .col-md-4 p {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
 .section-4 .com .img-box:after{
     content: '';
     opacity: 0;
