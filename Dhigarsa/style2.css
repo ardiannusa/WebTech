@@ -431,8 +431,7 @@ span {
 }
 
 .section-4 .col-md-4 p {
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 90%;
     color: grey;
 }
 
