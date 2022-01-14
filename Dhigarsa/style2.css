@@ -203,6 +203,14 @@ span {
     background: none;
 }
 
+.section-2 .shrimp{
+margin-left:2vmin;
+}
+
+.section-2 .trade{
+margin-right:2vmin;
+}
+
 .section-2 h2{
     font-weight: bold;
     padding: 0.4em 0;
