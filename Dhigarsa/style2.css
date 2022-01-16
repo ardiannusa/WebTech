@@ -246,6 +246,10 @@ margin-right:2vmin;
     color: whitesmoke;
     }
 
+.section-3 img{
+    margin-left:6.25rem;
+}
+
 /* The actual timeline (the vertical ruler) */
 
 .section-3 .timeline {
