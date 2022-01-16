@@ -8,7 +8,7 @@
     }
 
     header .col-md-5 img {
-        margin-left: 5vmin;
+        margin-left: 2vmin;
         margin-right: 5vmin;
         margin-bottom: 5vmin;
         width:31.25rem;
@@ -25,8 +25,9 @@
         background-position: -25vmin -10vmin;
     }
 
-    .section-2 .cover .content h1{
-        font-size: 7vmin;
+    .section-2 .cover .content h2{
+        padding-top:7vmin;
+        font-size: 10vmin;
     }
 
     .section-2 .cover .content p{
@@ -50,8 +51,8 @@
     }
 
     .section-3 p{
-        width: 200px;
-        font-size: 3vmin;
+        width: 15.625rem;
+        font-size: 4vmin;
     }
 
     .numbers .rect{
@@ -117,12 +118,12 @@
     }
 
     .section-5 .contactInfo p{
-        font-size: 3vmin;
-        width: 35vmin;
+        font-size: 4vmin;
+        width: 40vmin;
     }
     
     .section-5 .contactForm{
-        margin-top: 120vmin;
+        margin-top: 140vmin;
         margin-left: -51vmin;
         display:block;
     }
