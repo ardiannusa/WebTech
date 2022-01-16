@@ -3,35 +3,34 @@
         padding-left:1rem;
     }
 
-    header .container .heading .head{
-        width:700px;
-    }
-
     header .container .heading .head h1{
-        margin-right: 12.5rem;
-        margin-left: -3.75rem;
+        margin-left: -2rem;
+        width: 10rem;
         padding: 0px;
-        width: 11.875rem;
+        font-size: 10vmin;
     }
 
     header .container .heading .head p{
-        margin-right: 12.5rem;
-        margin-left: -3.75rem;
+        margin-left: -7.5rem;
         padding: 0px;
-        width: 11.875rem;
-        font-size: 2vmin;
+        width: 20rem;
+        font-size: 4vmin;
     }
 
     .section-1 {
         height: 230vmin;
+    }
+
+    .section-1 h2 {
+        font-size: 10vmin;
     }
     
     .section-2 .cover{
         background-size: 300%;
     }
 
-    .section-2 .cover h1{
-        font-size: 7vmin;
+    .section-2 .cover h2{
+        font-size: 10vmin;
     }
 
     .section-2 .cover p{
@@ -41,23 +40,23 @@
 
     .section-2 .row {
         display: block;
-        padding-left: 45vmin;
+        padding-left: 40vmin;
         padding-right: 45vmin;
     }
 
-    .section-2 img{
+    .section-2 .row img{
         width: 200px;
         height: 200px;
         display: initial;
     }
-    .section-2 h5{
+    .section-2 .row h5{
         width: 200px;
         font-size: 6vmin;
     }
 
-    .section-2 p{
+    .section-2 .row p{
         width: 300px;
-        font-size: 3vmin;
+        font-size: 4vmin;
     }
 
     .section-3 .left::after {
@@ -68,10 +67,18 @@
     .section-3 .right::after {
         left: 13px;
       }
+    
+    .section-3 .heading h2{
+        font-size: 10vmin;
+    }
 
     .section-3 .content p{
         font-size: 2.5vmin;
         text-align: left;
+    }
+
+    .section-3 .container .content img{
+        margin-left: 3vmin;
     }
 
     .section-4 .clevel{
@@ -105,12 +112,12 @@
     }
 
     .section-5 .contactInfo p{
-        font-size: 3vmin;
-        width: 35vmin;
+        font-size: 4vmin;
+        width: 40vmin;
     }
     
     .section-5 .contactForm{
-        margin-top: 120vmin;
+        margin-top: 140vmin;
         margin-left: -51vmin;
         display:block;
     }
@@ -125,8 +132,8 @@
         font-family: var(--Lato-font);
     }
 
-    footer .row .col-md-2{
-        margin-top: 8vmin;
-    }
+        footer .row .col-md-2{
+            margin-top: 8vmin;
+        }
    
 }
